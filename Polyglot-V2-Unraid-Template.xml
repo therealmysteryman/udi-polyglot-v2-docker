@@ -6,21 +6,22 @@
   <Network>bridge</Network>
   <Privileged>false</Privileged>
   <Support>https://hub.docker.com/r/b1n9/udi-polyglotv2/</Support>
-  <Overview>udi-polyglotv2&#xD;
-&#xD;
-[b]Converted By Community Applications[/b]</Overview>
-  <Category/>
+  <Overview>udi-polyglotv2<Category/>
   <WebUI>https://[IP]:[PORT:3000]</WebUI>
   <TemplateURL/>
   <Icon>https://github.com/Squidly271/community.applications/raw/master/source/community.applications/usr/local/emhttp/plugins/community.applications/images/question.png</Icon>
   <ExtraParams>--link=udi-polyglotv2-MongoDB:mongo -tid</ExtraParams>
   <DateInstalled>1515635298</DateInstalled>
-  <Description>udi-polyglotv2&#xD;
-&#xD;
-[b]Converted By Community Applications[/b]</Description>
+  <Description>udi-polyglotv2</Description>
   <Networking>
     <Mode>bridge</Mode>
-    <Publish/>
+      <Publish>
+        <Port>
+          <HostPort>3000</HostPort>
+          <ContainerPort>3000</ContainerPort>
+          <Protocol>tcp</Protocol>
+        </Port>
+      </Publish>
   </Networking>
   <Data>
     <Volume>
