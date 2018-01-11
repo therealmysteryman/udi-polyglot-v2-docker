@@ -1,5 +1,3 @@
-# Learn something new everyday
-
 FROM debian:stretch
 
 # 80 = HTTP, 443 = HTTPS, 3000 = Express server(dev), 4200 = Angular2 (dev)
