@@ -11,5 +11,8 @@ WORKDIR /opt/udi-polyglotv2/
 RUN wget -q https://github.com/Einstein42/udi-polyglotv2/raw/master/binaries/polyglot-v2-linux-x64.tar.gz
 RUN tar -zxf /opt/udi-polyglotv2/polyglot-v2-linux-x64.tar.gz
 
+# Required for BlueIris Nodeserver
+RUN pip install requests
+
 # Run Polyglot
 CMD /opt/udi-polyglotv2/polyglot-v2-linux-x64
