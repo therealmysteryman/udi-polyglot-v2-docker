@@ -12,7 +12,7 @@ RUN wget -q https://github.com/Einstein42/udi-polyglotv2/raw/master/binaries/pol
 RUN tar -zxf /opt/udi-polyglotv2/polyglot-v2-linux-x64.tar.gz
 
 # Required for BlueIris Nodeserver
-RUN pip install requests
+RUN pip3 install requests
 
 # Run Polyglot
 CMD /opt/udi-polyglotv2/polyglot-v2-linux-x64
