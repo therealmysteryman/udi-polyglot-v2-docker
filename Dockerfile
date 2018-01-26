@@ -13,6 +13,10 @@ RUN tar -zxf /opt/udi-polyglotv2/polyglot-v2-linux-x64.tar.gz
 
 # Required for BlueIris Nodeserver
 RUN pip3 install requests
+# Required for Nanoleaf Nodeserver
+RUN pip3 install nanoleaf
+# Required for Sense Energy NodeServer
+RUN pip3 install sense-energy
 
 # Run Polyglot
 CMD /opt/udi-polyglotv2/polyglot-v2-linux-x64
