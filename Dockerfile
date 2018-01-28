@@ -16,7 +16,7 @@ RUN pip3 install requests
 # Required for Nanoleaf Nodeserver
 RUN pip3 install nanoleaf
 # Required for Sense Energy NodeServer
-RUN pip3 install sense-energy
+RUN pip3 install sense_energy
 
 # Run Polyglot
 CMD /opt/udi-polyglotv2/polyglot-v2-linux-x64
