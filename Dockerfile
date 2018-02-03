@@ -17,6 +17,8 @@ RUN pip3 install requests
 RUN pip3 install nanoleaf
 # Required for Sense Energy NodeServer
 RUN pip3 install sense_energy
+# RUN pip install PolyInterface
+RUN pip install polyinterface
 
 # Run Polyglot
 CMD /opt/udi-polyglotv2/polyglot-v2-linux-x64
