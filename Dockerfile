@@ -9,7 +9,7 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2930ADAE8CAF505
 RUN echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.6 multiverse" | tee /etc/apt/sources.list.d/mongodb-org-3.6.list
 
 RUN apt-get update -y
-RUN apt-get install unattended-upgrades
+RUN apt-get -qqy install unattended-upgrades
 RUN dpkg-reconfigure unattended-upgrades
 RUN apt-get -qqy install git python3-pip python3-dev python2.7-dev python-pip wget zip mongodb-org
 
