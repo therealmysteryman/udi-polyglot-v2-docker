@@ -6,7 +6,7 @@ EXPOSE 27017
 EXPOSE 28017
 
 RUN apt-get update && apt-get dist-upgrade -y
-RUN apt-get -qqy install git python3-pip python3-dev python2.7-dev python-pip wget zip mongodb
+RUN apt-get -qqy install git python3-pip python3-dev python2.7-dev python-pip wget zip mongodb-10gen=2.4.6
 
 RUN mkdir -p /opt/udi-polyglotv2/
 WORKDIR /opt/udi-polyglotv2/
