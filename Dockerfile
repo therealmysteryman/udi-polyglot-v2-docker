@@ -10,7 +10,6 @@ RUN echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.6 multiver
 
 RUN apt-get update -y
 RUN apt-get -qqy install unattended-upgrades
-RUN dpkg-reconfigure unattended-upgrades
 RUN apt-get -qqy install git python3-pip python3-dev python2.7-dev python-pip wget zip mongodb-org
 
 RUN mkdir -p /opt/udi-polyglotv2/
