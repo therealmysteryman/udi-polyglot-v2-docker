@@ -21,5 +21,5 @@ RUN tar -zxf /opt/udi-polyglotv2/polyglot-v2-linux-x64.tar.gz
 RUN pip install polyinterface
 RUN pip3 install nanoleaf sense_energy
 
-# Run Polyglot
+CMD ["mongod"]
 CMD /opt/udi-polyglotv2/polyglot-v2-linux-x64
