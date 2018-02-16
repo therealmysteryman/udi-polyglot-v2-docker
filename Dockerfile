@@ -5,14 +5,18 @@ EXPOSE 3000
 EXPOSE 27017
 EXPOSE 28017
 
+RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
+RUN echo "deb http://repo.mongodb.org/apt/debian "$(lsb_release -sc)"/mongodb-org/3.4 main" | tee /etc/apt/sources.list.d/mongodb-3.4.list
+
 RUN apt-get update && apt-get dist-upgrade -y
-RUN apt-get -qqy install git python3-pip python3-dev python2.7-dev python-pip wget zip mongodb-10gen=2.4.6
+RUN apt-get -qqy install git python3-pip python3-dev python2.7-dev python-pip wget zip mongodb-org
 
 RUN mkdir -p /opt/udi-polyglotv2/
 WORKDIR /opt/udi-polyglotv2/
 
 RUN wget -q https://github.com/Einstein42/udi-polyglotv2/raw/master/binaries/polyglot-v2-linux-x64.tar.gz
 RUN tar -zxf /opt/udi-polyglotv2/polyglot-v2-linux-x64.tar.gz
+
 
 # Install dependency for nodeserver 
 RUN pip install polyinterface
