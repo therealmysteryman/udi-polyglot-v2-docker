@@ -6,7 +6,7 @@ EXPOSE 3000
 EXPOSE 27017
 EXPOSE 28017
 
-# RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
+RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
 # RUN echo "deb http://repo.mongodb.org/apt/debian "$(lsb_release -sc)"/mongodb-org/3.4 main" | tee /etc/apt/sources.list.d/mongodb-3.4.list
 
 # RUN apt-get update && apt-get dist-upgrade -y
