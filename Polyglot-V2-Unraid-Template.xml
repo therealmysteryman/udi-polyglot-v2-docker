@@ -10,7 +10,7 @@
   <WebUI>https://[IP]:[PORT:3000]</WebUI>
   <TemplateURL/>
   <Icon>https://github.com/Squidly271/community.applications/raw/master/source/community.applications/usr/local/emhttp/plugins/community.applications/images/question.png</Icon>
-  <ExtraParams>--link=udi-polyglotv2-MongoDB:mongo -tid</ExtraParams>
+  <ExtraParams>-tid</ExtraParams>
   <DateInstalled>1515635298</DateInstalled>
   <Description>udi-polyglotv2</Description>
   <Networking>
