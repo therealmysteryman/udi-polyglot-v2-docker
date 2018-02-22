@@ -9,11 +9,11 @@ RUN apt-get -qqy install git python3-pip python3-dev python2.7-dev python-pip wg
 RUN mkdir -p /opt/udi-polyglotv2/
 WORKDIR /opt/udi-polyglotv2/
 
-RUN wget -q https://github.com/Einstein42/udi-polyglotv2/raw/master/binaries/polyglot-v2-linux-x64.tar.gz
-RUN tar -zxf /opt/udi-polyglotv2/polyglot-v2-linux-x64.tar.gz
+RUN wget -q https://s3.amazonaws.com/3csolutions/udi/polyglotv2/beta/polyglot-v2-linux-armv7.tar.gz
+RUN tar -zxf /opt/udi-polyglotv2/polyglot-v2-linux-armv7.tar.gz
 
 RUN pip install polyinterface
 RUN pip3 install nanoleaf sense_energy
 
 # Run Polyglot
-CMD /opt/udi-polyglotv2/polyglot-v2-linux-x64
+CMD /opt/udi-polyglotv2/polyglot-v2-linux-armv7.tar.gz
