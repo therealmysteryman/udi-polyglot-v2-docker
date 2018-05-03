@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM debian:stretch-slim
 
 # 80 = HTTP, 443 = HTTPS, 3000 = Express server(dev), 4200 = Angular2 (dev)
 EXPOSE 3000
@@ -16,4 +16,4 @@ RUN pip install polyinterface
 RUN pip3 install polyinterface nanoleaf sense_energy
 
 # Run Polyglot
-CMD /opt/udi-polyglotv2/polyglot-v2-linux-x64
+CMD "/opt/udi-polyglotv2/polyglot-v2-linux-x64", "tail -f /dev/null"
