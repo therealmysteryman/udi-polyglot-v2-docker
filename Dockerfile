@@ -16,4 +16,4 @@ RUN pip install polyinterface
 RUN pip3 install polyinterface nanoleaf sense_energy
 
 # Run Polyglot
-CMD "/opt/udi-polyglotv2/polyglot-v2-linux-x64", "tail -f /dev/null"
+CMD /opt/udi-polyglotv2/polyglot-v2-linux-x64 & tail -f /dev/null
