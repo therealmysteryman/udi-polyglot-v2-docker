@@ -13,7 +13,7 @@ RUN wget -q https://s3.amazonaws.com/polyglotv2/binaries/polyglot-v2-linux-x64.t
 RUN tar -zxf /opt/udi-polyglotv2/polyglot-v2-linux-x64.tar.gz
 
 RUN pip install polyinterface
-RUN pip3 install polyinterface nanoleaf sense_energy
+RUN pip3 install polyinterface nanoleaf sense_energy rachiopy
 
 # Run Polyglot
 CMD /opt/udi-polyglotv2/polyglot-v2-linux-x64 & tail -f /dev/null
