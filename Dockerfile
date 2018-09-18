@@ -5,7 +5,7 @@ EXPOSE 3001
 
 RUN apk update && \
     apk upgrade && \
-    apk add bash wget zip
+    apk add bash find wget zip
     
 RUN mkdir -p /opt/udi-polyglotv2/
 WORKDIR /opt/udi-polyglotv2/
@@ -13,8 +13,7 @@ WORKDIR /opt/udi-polyglotv2/
 RUN wget -q https://s3.amazonaws.com/polyglotv2/binaries/polyglot-v2-linux-x64.tar.gz
 RUN tar -zxf /opt/udi-polyglotv2/polyglot-v2-linux-x64.tar.gz
 
-RUN pip install polyinterface
-RUN pip3 install polyinterface nanoleaf sense_energy rachiopy
+COPY run.sh .
 
 # Run Polyglot
-CMD /opt/udi-polyglotv2/polyglot-v2-linux-x64 & tail -f /dev/null
+CMD run.sh
