@@ -10,8 +10,8 @@ EXPOSE 3001
 
 RUN apk update && \
     apk upgrade && \
-    apk add bash findutils nano wget zip && \
-    apk add --no-cache --virtual .build-deps g++ python3-dev python2.7-dev libffi-dev openssl-dev 
+    apk add bash findutils nano python2-dev python3-dev wget zip
+    # apk add --no-cache --virtual .build-deps g++ python3-dev python2-dev libffi-dev openssl-dev 
     
 RUN mkdir -p /opt/udi-polyglotv2/
 WORKDIR /opt/udi-polyglotv2/
