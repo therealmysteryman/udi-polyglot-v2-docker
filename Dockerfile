@@ -1,5 +1,10 @@
 FROM python:alpine
 
+ENV PYTHON=/usr/bin/python
+ENV PYTHON3=/usr/bin/python3
+ENV NODE_ENV=development
+ENV USEDOCKER=true
+
 EXPOSE 3000
 EXPOSE 3001
 
