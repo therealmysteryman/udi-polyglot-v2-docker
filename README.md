@@ -2,6 +2,6 @@
 
 It required that you run MongoDB (using MongoDB Docker from Community Plugins) in another Docker named mongo. 
 
-##
-lastest - Docker Image based on Debian:Stretch
-apline - Docker Image based on Alpine
+## Tags
+- latest - Docker Image based on Debian:Stretch
+- apline - Docker Image based on Alpine
