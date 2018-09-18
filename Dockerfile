@@ -20,5 +20,4 @@ RUN tar -zxf /opt/udi-polyglotv2/polyglot-v2-linux-x64.tar.gz
 
 COPY run.sh .
 
-# Run Polyglot
 CMD run.sh
