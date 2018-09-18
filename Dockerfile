@@ -5,7 +5,7 @@ EXPOSE 3001
 
 RUN apk update && \
     apk upgrade && \
-    apk add bash wget zip python3-dev python2.7-dev 
+    apk add bash wget zip
     
 RUN mkdir -p /opt/udi-polyglotv2/
 WORKDIR /opt/udi-polyglotv2/
