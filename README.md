@@ -4,7 +4,7 @@ It required that you run MongoDB (using MongoDB Docker from Community Plugins) i
 
 ## Tags
 - latest - Docker Image based on Debian:Stretch
-- apline - Docker Image based on Alpine - **Currently not working would required polyglot to be compiled from source**
+- apline - Docker Image based on Alpine - **Currently not working would required polyglot to be compiled from source in alpine**
 
 ## Note
 
