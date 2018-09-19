@@ -19,6 +19,8 @@ RUN wget -q https://s3.amazonaws.com/polyglotv2/binaries/polyglot-v2-linux-x64.t
 RUN tar -zxf /opt/udi-polyglotv2/polyglot-v2-linux-x64.tar.gz
 
 COPY run.sh /opt/
+
 RUN chmod +x /opt/run.sh
+RUN chmod +x /opt/udi-polyglotv2/polyglot-v2-linux-x64
 
 CMD /opt/run.sh
