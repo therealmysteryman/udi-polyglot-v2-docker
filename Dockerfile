@@ -10,7 +10,7 @@ EXPOSE 3001
 
 RUN apk update && \
     apk upgrade && \
-    apk add bash findutils nano python2-dev python3-dev tar wget zip
+    apk add bash findutils nano python2-dev python3-dev zip
     
 # install glibc
 RUN apk --no-cache add ca-certificates wget && \
