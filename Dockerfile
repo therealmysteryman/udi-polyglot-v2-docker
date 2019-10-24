@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM debian:buster
 
 EXPOSE 3000
 # Rachio Websocket
